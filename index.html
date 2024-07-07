@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuckoo Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock">
+        <div class="roof">
+            <div class="window">
+                <div class="left-door">
+                    <div class="pane pane1"></div>
+                    <div class="pane pane2"></div>
+                </div>
+                <div class="cuckoo" id="cuckoo">
+                    <img src="cuckoo.png" alt="Cuckoo Bird" id="cuckoo-img">
+                </div>
+                <div class="right-door">
+                    <div class="pane pane1"></div>
+                    <div class="pane pane2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clock-face">
+            <div class="analog-clock">
+                <div class="hand hour-hand" id="hour-hand"></div>
+                <div class="hand minute-hand" id="minute-hand"></div>
+                <div class="hand second-hand" id="second-hand"></div>
+                <div class="center-circle"></div>
+                <div class="numbers">
+                    <div class="number number1">12</div>
+                    <div class="number number2">3</div>
+                    <div class="number number3">6</div>
+                    <div class="number number4">9</div>
+                </div>
+            </div>
+            
+            <div class="time" id="time"></div>
+        </div>
+        <div class="pendulum"></div>
+    </div>
+    <audio id="cuckoo-sound" src="cuckoosound.mp3"></audio>
+    <audio id="clock-sound" src="clocksound.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
